@@ -127,7 +127,7 @@ This project simulates a complex HR onboarding process for a growing tech compan
 I'm **Camila Kavanagh** – a Business Specialist passionate about process optimisation and ethical automation.  
 With a Lean Six Sigma Black Belt and growing expertise in Python and RPA, I create smarter systems that save time and enhance team performance.
 
-🔗 [LinkedIn](https://www.linkedin.com/in/camila-d-b907a5105/)  
+🔗 [LinkedIn]([https://www.linkedin.com/in/camila-d-b907a5105/](https://www.linkedin.com/in/camila-d-b907a5105/))  
 🗂 Portfolio on [Canva](#) *(coming soon)*  
 
 
