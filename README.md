@@ -8,6 +8,46 @@
 This project simulates a complex HR onboarding process for a growing tech company and demonstrates how automation, data analysis, and Lean thinking can dramatically reduce inefficiencies, errors, and delays.
 
 ---
+🏢 Business Context
+
+FuturaCore manually manages onboarding across 3 locations. The average time is 90+ minutes per hire, with frequent errors and no centralised tracking.
+
+This project applies:
+- **Lean Six Sigma (DMAIC)** to structure improvements  
+- **Python** for data cleaning and analysis  
+- **UiPath** for automation (emails, folders, Excel)  
+- **Power BI** for real-time dashboard reporting
+
+---
+
+## 🎯 Expected Results
+
+| Metric               | Before       | Target       |
+|----------------------|--------------|--------------|
+| Onboarding Time      | 90+ mins     | < 45 mins    |
+| Task Automation      | 0%           | ≥ 50%        |
+| Manual Error Rate    | ~15%         | < 5%         |
+| Dashboards & KPIs    | None         | Live & Real-time |
+
+---
+
+## 🧠 Key Insights & Visuals
+
+### 📊 Correlation Between Delays in Onboarding Steps  
+![Correlation Heatmap](./Correlation%20Between%20Delays%20in%20Onboarding%20Steps.png)  
+
+> Weak correlations suggest that delays are **isolated by task**, not systemic — ideal for **targeted automation** per step.
+
+---
+
+### 📈 Distribution of Processing Time  
+![Processing Time Histogram](./Distribution%20of%20Processing%20Time.png)  
+
+> - Most onboarding times are between **75–105 minutes**  
+> - Average: **~90 minutes**  
+> - A few extreme cases exceed **150 minutes**, likely due to **manual delays**  
+> - Highlights need for **cycle time reduction & process control**
+
 
 ## 🏢 Project Context
 
