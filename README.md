@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="futuracore_logo.png" alt="FuturaCore Logo" width="300"/>
+</p>
+
 # 🧑‍💼 HR Onboarding Process Improvement  
 ### 🛠 Automation • 📊 Data Analysis • ♻️ Lean Six Sigma
 
