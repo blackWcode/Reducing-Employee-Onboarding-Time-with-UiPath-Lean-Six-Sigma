@@ -96,10 +96,6 @@ This project simulates a complex HR onboarding process for a growing tech compan
 
 ## ✅ My Tasks & Contributions
 
-## ✅ My Tasks & Contributions
-
-## ✅ My Tasks & Contributions
-
 ### 1. Process Analysis Using DMAIC  
 - Defined key pain points using Lean Six Sigma  
 - Measured delays and cycle times  
