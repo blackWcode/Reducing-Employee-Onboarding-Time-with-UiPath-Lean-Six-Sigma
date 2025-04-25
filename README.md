@@ -56,7 +56,7 @@ This project simulates a complex HR onboarding process for a growing tech compan
 
 ### 🔗 Correlation Between Delays in Onboarding Steps  
 ![Correlation Heatmap](./Correlation%20Between%20Delays%20in%20Onboarding%20Steps.png)  
-> Weak correlations suggest delays are isolated by task — ideal for targeted automation.
+> Weak correlations suggest delays are isolated by task, which is ideal for targeted automation.
 
 ### 🕒 Distribution of Processing Time  
 ![Processing Time Histogram](./Distribution%20of%20Processing%20Time.png)  
@@ -98,11 +98,13 @@ This project simulates a complex HR onboarding process for a growing tech compan
 
 ## ✅ My Tasks & Contributions
 
+## ✅ My Tasks & Contributions
+
 ### 1. Process Analysis Using DMAIC  
 - Defined key pain points using Lean Six Sigma  
 - Measured delays and cycle times  
 - Analysed root causes and error trends  
-- Recommended automation and KPIS for monitoring  
+- Recommended automation and KPIs for monitoring  
 - 📄 [View DMAIC Presentation](https://github.com/YOURUSERNAME/YOURREPO/blob/main/HR%20Onboarding%20Process%20Improvement%20%20%20Presentation%20DMAIC.odp)
 
 ### 2. Data Analysis & Cleaning (Python)  
@@ -110,7 +112,6 @@ This project simulates a complex HR onboarding process for a growing tech compan
 - Built visual insights (histograms, heatmaps)  
 - Grouped analysis by office, department, and HR staff  
 - 📄 [View Python Analysis](https://github.com/YOURUSERNAME/YOURREPO/blob/main/Python%20Jupyter.html)
-
 
 ### 3. Process Design Document (PDD)  
 - Documented current vs. future automated flows  
