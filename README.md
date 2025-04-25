@@ -96,16 +96,21 @@ This project simulates a complex HR onboarding process for a growing tech compan
 
 ## ✅ My Tasks & Contributions
 
+## ✅ My Tasks & Contributions
+
 ### 1. Process Analysis Using DMAIC  
 - Defined key pain points using Lean Six Sigma  
 - Measured delays and cycle times  
 - Analysed root causes and error trends  
-- Recommended automation and KPIs for monitoring
+- Recommended automation and KPIS for monitoring  
+- 📄 [View DMAIC Presentation](https://github.com/YOURUSERNAME/YOURREPO/blob/main/HR%20Onboarding%20Process%20Improvement%20%20%20Presentation%20DMAIC.odp)
 
 ### 2. Data Analysis & Cleaning (Python)  
 - Cleaned and transformed onboarding data  
 - Built visual insights (histograms, heatmaps)  
-- Grouped analysis by office, department, and HR staff
+- Grouped analysis by office, department, and HR staff  
+- 📄 [View Python Analysis](https://github.com/YOURUSERNAME/YOURREPO/blob/main/Python%20Jupyter.html)
+
 
 ### 3. Process Design Document (PDD)  
 - Documented current vs. future automated flows  
