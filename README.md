@@ -101,13 +101,15 @@ This project simulates a complex HR onboarding process for a growing tech compan
 - Measured delays and cycle times  
 - Analysed root causes and error trends  
 - Recommended automation and KPIs for monitoring  
-- 📄 [View DMAIC Presentation](https://github.com/YOURUSERNAME/YOURREPO/blob/main/HR%20Onboarding%20Process%20Improvement%20%20%20Presentation%20DMAIC.odp)
+### 📄 DMAIC Slide Deck  
+[Download DMAIC Presentation](https://github.com/YourUsername/YourRepoName/blob/main/HR%20Onboarding%20Process%20Improvement%20Presentation%20DMAIC.odp?raw=true)
 
 ### 2. Data Analysis & Cleaning (Python)  
 - Cleaned and transformed onboarding data  
 - Built visual insights (histograms, heatmaps)  
 - Grouped analysis by office, department, and HR staff  
-- 📄 [View Python Analysis](https://github.com/YOURUSERNAME/YOURREPO/blob/main/Python%20Jupyter.html)
+### 📄 Python Analysis Report  
+[Open Python Analysis](https://github.com/YourUsername/YourRepoName/blob/main/Python%20Jupyter.html?raw=true)
 
 ### 3. Process Design Document (PDD)  
 - Documented current vs. future automated flows  
