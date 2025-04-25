@@ -62,10 +62,6 @@ This project simulates a complex HR onboarding process for a growing tech compan
 ![Processing Time Histogram](./Distribution%20of%20Processing%20Time.png)  
 > Most onboarding takes **75–105 mins**, averaging ~90. A few cases exceed **150 mins**, showing opportunities for process control.
 
-### 📷 Sample Python Output
-
-<img src="./Distribution%20of%20Processing%20Time.png" alt="Python Visualization" width="600"/>
-
 ---
 
 ## 📂 Dataset Overview
