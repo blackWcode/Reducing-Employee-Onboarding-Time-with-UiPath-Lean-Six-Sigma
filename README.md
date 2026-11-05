@@ -28,14 +28,14 @@
 - Frequent delays and data entry errors
 - No central visibility of where each new hire stands
 
-## 🎯 Objectives
+##  Objectives
 
-- 🔍 Map the current process with Lean tools (SIPOC, fishbone)
-- 🧠 Analyse 600 onboarding cases to find bottlenecks
-- 🤖 Design UiPath automation for the repetitive steps
-- 📈 Define Power BI KPIs to monitor the process
+-  Map the current process with Lean tools (SIPOC, fishbone)
+-  Analyse 600 onboarding cases to find bottlenecks
+-  Design UiPath automation for the repetitive steps
+-  Define Power BI KPIs to monitor the process
 
-## 📈 Business case targets
+##  Business case targets
 
 | Metric | Before | Target |
 |---|---|---|
@@ -46,7 +46,7 @@
 
 ---
 
-## ♻️ Approach: DMAIC
+##  Approach: DMAIC
 
 | Phase | What was done |
 |---|---|
@@ -84,17 +84,17 @@
 
 | Area | Control activity | Frequency | Owner |
 |---|---|---|---|
-| 📋 Task completion | Automated UiPath checklist with completion logs | Daily | HR officers |
-| 📊 Dashboard monitoring | Power BI KPIs: avg time, delays, errors | Weekly | HR manager |
-| 🧪 Data validation | Spot-check onboarding data entries | Biweekly | QA specialist |
-| 💬 Feedback loop | HR team feedback on bottlenecks and new errors | Monthly | HR lead |
-| 🧠 Training & SOP review | Update the process guide and checklist | Quarterly | L&D coordinator |
+|  Task completion | Automated UiPath checklist with completion logs | Daily | HR officers |
+|  Dashboard monitoring | Power BI KPIs: avg time, delays, errors | Weekly | HR manager |
+|  Data validation | Spot-check onboarding data entries | Biweekly | QA specialist |
+|  Feedback loop | HR team feedback on bottlenecks and new errors | Monthly | HR lead |
+|  Training & SOP review | Update the process guide and checklist | Quarterly | L&D coordinator |
 
 </details>
 
 ---
 
-## 📊 Key findings
+##  Key findings
 
 From the 600 cases in `realistic_hr_onboarding_data.xlsx`:
 
@@ -112,23 +112,23 @@ From the 600 cases in `realistic_hr_onboarding_data.xlsx`:
 - **Offices** are very similar on average: Cork 89.8 min, Dublin 90.5, Limerick 90.9.
 - **Delays in different steps are almost uncorrelated** (between −0.10 and 0.08), so delays are isolated by task, which makes them good targets for step-level automation.
 
-### 🕒 Distribution of processing time
+###  Distribution of processing time
 ![Processing time histogram](./Distribution%20of%20Processing%20Time.png)
 > Most onboardings take **75–105 minutes**, centred around 90. The right tail reaches **150+ minutes**, pointing to bottlenecks worth controlling.
 
-### 🔗 Correlation between delays in onboarding steps
+###  Correlation between delays in onboarding steps
 ![Correlation heatmap](./Correlation%20Between%20Delays%20in%20Onboarding%20Steps.png)
 > Weak correlations suggest delays are isolated by task, which is ideal for targeted automation.
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - **File:** `realistic_hr_onboarding_data.xlsx` (600 simulated cases, start dates Oct 2024 – Apr 2025)
 - **Steps tracked (Completed / Delayed / Error):** Offer Letter, Documents, References, Policies, Vetting, Contract, Folder, Final Email
 - **Other fields:** Department (6), Office (3), HR Officer (10), Delay Reason, Processing Time (min)
 
-## 📓 Python notebook
+##  Python notebook
 
 `hr_onboarding_analysis.ipynb` (pandas, Matplotlib, Seaborn):
 
@@ -150,7 +150,7 @@ jupyter notebook hr_onboarding_analysis.ipynb
 
 ---
 
-## ✅ My contributions
+##  My contributions
 
 1. **Process analysis (DMAIC):** defined the pain points, measured delays and cycle times, analysed root causes and error trends, and recommended automation and monitoring KPIs.
 2. **Data analysis (Python):** cleaned and explored the onboarding data and built the visual insights.
@@ -161,7 +161,7 @@ jupyter notebook hr_onboarding_analysis.ipynb
 
 **Lean Six Sigma** (DMAIC, SIPOC, fishbone, control plan) · **Python** (pandas, Matplotlib, Seaborn) · **UiPath** (RPA) · **Power BI** · **Excel**
 
-## 📁 Repository contents
+##  Repository contents
 
 | File | Contents |
 |---|---|
@@ -172,10 +172,3 @@ jupyter notebook hr_onboarding_analysis.ipynb
 | `*.png` | Charts used in this README |
 | `index.html`, `style.css`, `script.js`, `data.js` | Project website (GitHub Pages) |
 
----
-
-## 💼 About me
-
-I'm **Camila Kavanagh**, a Business Specialist passionate about process optimisation and ethical automation. With a Lean Six Sigma Black Belt and growing expertise in Python and RPA, I create smarter systems that save time and enhance team performance.
-
-🔗 [LinkedIn](https://www.linkedin.com/in/camila-d-b907a5105/) · 💻 [GitHub](https://github.com/blackWcode)
