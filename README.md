@@ -11,16 +11,16 @@
 
 <p align="center">
   🌐 <a href="https://blackwcode.github.io/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma/"><strong>Interactive project website</strong></a>
-  &nbsp;·&nbsp; 📓 <a href="./hr_onboarding_analysis.ipynb">Notebook</a>
-  &nbsp;·&nbsp; 📊 <a href="./realistic_hr_onboarding_data.xlsx">Dataset</a>
-  &nbsp;·&nbsp; 🖥 <a href="./View%20DMAIC%20Presentation">DMAIC presentation</a>
+  &nbsp;·&nbsp; <a href="./hr_onboarding_analysis.ipynb">Notebook</a>
+  &nbsp;·&nbsp; <a href="./realistic_hr_onboarding_data.xlsx">Dataset</a>
+  &nbsp;·&nbsp; <a href="./View%20DMAIC%20Presentation">DMAIC presentation</a>
 </p>
 
 > **Note:** FuturaCore Ltd. and its onboarding data are **simulated** for this portfolio project. The figures in *Key findings* come from that dataset. The improvements are **business case targets**, not measured results.
 
 ---
 
-## 🏢 The problem
+##  The problem
 
 **FuturaCore Ltd.** is a mid-sized tech company with 600+ employees across **Dublin, Cork and Limerick**. HR manages onboarding by hand, using emails, Excel trackers and shared folders, and each onboarding takes about **1 hour 30 minutes per employee**.
 
