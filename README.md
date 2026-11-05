@@ -8,6 +8,9 @@
 
 This project simulates a complex HR onboarding process for a growing tech company and demonstrates how automation, data analysis, and Lean thinking can dramatically reduce inefficiencies, errors, and delays.
 
+🌐 **Website:** https://blackwcode.github.io/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma/ (interactive DMAIC walkthrough and data explorer)
+
+
 ---
 
 ## 🏢 Project Context

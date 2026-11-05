@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HR Onboarding Process Improvement · Lean Six Sigma + UiPath</title>
+  <meta name="description" content="A Lean Six Sigma (DMAIC) case study on a fictional company's HR onboarding: 600 onboarding cases analysed with Python, with UiPath automation and Power BI KPIs designed to halve onboarding time.">
+  <meta name="author" content="Camila Kavanagh">
+  <meta name="keywords" content="Lean Six Sigma, DMAIC, SIPOC, UiPath, RPA, process improvement, HR onboarding, Python, Power BI">
+  <meta name="theme-color" content="#060a14">
+  <link rel="canonical" href="https://blackwcode.github.io/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HR Onboarding Process Improvement · Lean Six Sigma + UiPath">
+  <meta property="og:description" content="DMAIC, Python analysis and UiPath automation applied to a 90-minute manual onboarding process.">
+  <meta property="og:url" content="https://blackwcode.github.io/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#top" aria-label="HR Onboarding Process Improvement, back to top">
+        <img src="favicon.svg" alt="" width="28" height="28">
+        <span>ONBOARDING<span class="brand-plus">·</span>DMAIC</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#context">Context</a></li>
+        <li><a href="#dmaic">DMAIC</a></li>
+        <li><a href="#analysis">Analysis</a></li>
+        <li><a href="#root-causes">Root causes</a></li>
+        <li><a href="#improve">Improve</a></li>
+        <li><a href="#control">Control</a></li>
+        <li><a class="nav-cta" href="https://github.com/blackWcode/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="bg-canvas" aria-hidden="true"></canvas>
+      <div class="hero-inner container">
+        <p class="badge badge-done"><span class="pulse" aria-hidden="true"></span>Lean Six Sigma case study · Fictional company</p>
+        <p class="eyebrow">HR Onboarding Process Improvement</p>
+        <h1 id="hero-title">90 Minutes Per Hire. <span class="grad">The Goal: Under 45.</span></h1>
+        <p class="lede">A DMAIC project on a manual HR onboarding process: 600 cases analysed with Python, automation designed in UiPath, and KPIs planned in Power BI.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#analysis">Explore the data</a>
+          <a class="btn btn-ghost" href="https://github.com/blackWcode/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma">View on GitHub</a>
+        </div>
+        <dl class="hero-facts">
+          <div><dt>Cases analysed</dt><dd>600</dd></div>
+          <div><dt>Average time</dt><dd>90.4 min</dd></div>
+          <div><dt>Steps tracked</dt><dd>8</dd></div>
+          <div><dt>Method</dt><dd>DMAIC</dd></div>
+        </dl>
+      </div>
+      <a class="scroll-cue" href="#context" aria-label="Scroll to the context"><span></span></a>
+    </section>
+
+    <!-- CONTEXT -->
+    <section class="section" id="context" aria-labelledby="ctx-title">
+      <div class="container split">
+        <div class="reveal">
+          <p class="kicker">01 · Context</p>
+          <h2 id="ctx-title">A growing company, a manual process</h2>
+          <p><strong>FuturaCore Ltd.</strong> is a fictional mid-sized tech company with 600+ employees across Dublin, Cork and Limerick. HR runs onboarding by hand, with emails, Excel trackers and shared folders, and each onboarding takes about <strong>1 hour 30 minutes</strong> per employee.</p>
+          <ul class="ticks">
+            <li><strong>Inconsistent task tracking</strong> across offices and officers</li>
+            <li><strong>Frequent delays and data entry errors</strong></li>
+            <li><strong>No central visibility</strong> of where each new hire stands</li>
+          </ul>
+          <p class="note">FuturaCore and its dataset are simulated for this portfolio project. The figures below are from that dataset; the improvements are targets, not measured results.</p>
+        </div>
+        <figure class="logo-card reveal">
+          <img src="futuracore_logo.png" alt="FuturaCore Ltd. logo (fictional company)" width="260" height="260">
+          <figcaption>FuturaCore Ltd. · Dublin · Cork · Limerick</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- DMAIC -->
+    <section class="section alt" id="dmaic" aria-labelledby="dmaic-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">02 · Method</p>
+          <h2 id="dmaic-title">Five phases of DMAIC</h2>
+          <p>Select a phase to see what was done.</p>
+        </div>
+        <div class="dmaic reveal">
+          <div class="dmaic-tabs" role="tablist" aria-label="DMAIC phases">
+            <button role="tab" id="t-d" aria-controls="p-d" aria-selected="true" class="dm-tab is-active"><b>D</b><span>Define</span></button>
+            <button role="tab" id="t-m" aria-controls="p-m" aria-selected="false" class="dm-tab" tabindex="-1"><b>M</b><span>Measure</span></button>
+            <button role="tab" id="t-a" aria-controls="p-a" aria-selected="false" class="dm-tab" tabindex="-1"><b>A</b><span>Analyze</span></button>
+            <button role="tab" id="t-i" aria-controls="p-i" aria-selected="false" class="dm-tab" tabindex="-1"><b>I</b><span>Improve</span></button>
+            <button role="tab" id="t-c" aria-controls="p-c" aria-selected="false" class="dm-tab" tabindex="-1"><b>C</b><span>Control</span></button>
+          </div>
+          <div class="dm-panel" role="tabpanel" id="p-d" aria-labelledby="t-d">
+            <h3>Define the problem and the goal</h3>
+            <p>The manual process takes over 1h30 per hire, with frequent delays, errors and no central tracking. The business case sets four targets: halve onboarding time, automate at least half the manual tasks, cut errors, and give HR and leadership live dashboards.</p>
+            <a class="text-link" href="#targets">See the targets ↓</a>
+          </div>
+          <div class="dm-panel" role="tabpanel" id="p-m" aria-labelledby="t-m" hidden>
+            <h3>Measure the current process</h3>
+            <p>A SIPOC maps who supplies what, the process steps, the outputs and who receives them. 600 onboarding cases were recorded across 8 steps, with status, delay reason and processing time for each.</p>
+            <a class="text-link" href="#sipoc">See the SIPOC ↓</a>
+          </div>
+          <div class="dm-panel" role="tabpanel" id="p-a" aria-labelledby="t-a" hidden>
+            <h3>Analyze where time is lost</h3>
+            <p>Python (pandas, Matplotlib, Seaborn) was used to clean the data, chart the processing-time distribution, compare offices, departments and HR officers, and check whether delays in different steps are related. A fishbone diagram groups the root causes.</p>
+            <a class="text-link" href="#analysis">Explore the analysis ↓</a>
+          </div>
+          <div class="dm-panel" role="tabpanel" id="p-i" aria-labelledby="t-i" hidden>
+            <h3>Improve with automation</h3>
+            <p>UiPath is used to automate the repetitive steps (emails, folder creation and Excel updates), documented in a Process Design Document with current and future flows, inputs, outputs, exceptions and business rules.</p>
+            <a class="text-link" href="#improve">See the improvements ↓</a>
+          </div>
+          <div class="dm-panel" role="tabpanel" id="p-c" aria-labelledby="t-c" hidden>
+            <h3>Control so the gains last</h3>
+            <p>A control plan sets who checks what and how often, from daily automated checklists to quarterly SOP reviews, with a Power BI dashboard tracking average time, delays and errors.</p>
+            <a class="text-link" href="#control">See the control plan ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIPOC -->
+    <section class="section" id="sipoc" aria-labelledby="sipoc-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">03 · Measure</p>
+          <h2 id="sipoc-title">SIPOC: the process end to end</h2>
+        </div>
+        <div class="sipoc reveal">
+          <div class="sp"><h3><b>S</b>uppliers</h3><ul><li>New hire</li><li>IT / systems admin</li><li>Hiring manager</li><li>Compliance team</li><li>HR department</li></ul></div>
+          <div class="sp"><h3><b>I</b>nputs</h3><ul><li>Personal documents (ID, address, tax)</li><li>Reference check data</li><li>Policies and regulatory requirements</li><li>Job details, contract templates</li><li>Email and provisioning platforms</li></ul></div>
+          <div class="sp sp-p"><h3><b>P</b>rocess</h3><ul><li>Receive, verify and check documents</li><li>Enter data, review credentials</li><li>Compliance and background checks</li><li>Generate and track offer letter</li><li>Provision accounts, folders, roles</li></ul></div>
+          <div class="sp"><h3><b>O</b>utputs</h3><ul><li>System credentials</li><li>Employee activated</li><li>Access to internal systems</li><li>Signed contract</li><li>Email, apps and folders ready</li></ul></div>
+          <div class="sp"><h3><b>C</b>ustomers</h3><ul><li>Internal HR team</li><li>New employee</li><li>IT and security teams</li><li>Manager and line of business</li><li>Department teams</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANALYSIS -->
+    <section class="section alt" id="analysis" aria-labelledby="an-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">04 · Analyze</p>
+          <h2 id="an-title">Where does the time go?</h2>
+          <p>All 600 cases from the dataset. Filter by office, department or HR officer, or click a step or delay reason to drill down.</p>
+        </div>
+
+        <div class="dash reveal" id="dash">
+          <div class="tip" id="tip" role="tooltip" hidden></div>
+          <div class="slicers" role="group" aria-label="Filters">
+            <label>Office<select id="f-office"><option value="">All offices</option></select></label>
+            <label>Department<select id="f-dept"><option value="">All departments</option></select></label>
+            <label>HR officer<select id="f-officer"><option value="">All officers</option></select></label>
+            <button class="reset" id="f-reset" type="button">Reset</button>
+          </div>
+          <div class="dash-bar"><div class="chips" id="chips" aria-live="polite"></div></div>
+
+          <div class="kpis" aria-live="polite">
+            <div class="kpi"><span class="kpi-label">Cases</span><span class="kpi-val" id="k-n">–</span></div>
+            <div class="kpi"><span class="kpi-label">Avg time</span><span class="kpi-val" id="k-avg">–</span></div>
+            <div class="kpi"><span class="kpi-label">Steps delayed</span><span class="kpi-val" id="k-del">–</span></div>
+            <div class="kpi"><span class="kpi-label">Steps with errors</span><span class="kpi-val" id="k-err">–</span></div>
+            <div class="kpi"><span class="kpi-label">Fully clean cases</span><span class="kpi-val" id="k-clean">–</span></div>
+          </div>
+
+          <div class="panel panel-wide">
+            <div class="panel-head">
+              <h3>Processing time distribution</h3>
+              <ul class="key" role="list"><li><i class="k-rev"></i>Cases</li><li><i class="k-avg"></i>Average</li><li><i class="k-goal"></i>Target &lt; 45 min</li></ul>
+            </div>
+            <div id="hist" class="chart" role="img" aria-label="Histogram of onboarding processing time in minutes"></div>
+          </div>
+
+          <div class="panel-grid two">
+            <div class="panel">
+              <div class="panel-head"><h3>Status by step</h3><ul class="key" role="list"><li><i class="k-ok"></i>Completed</li><li><i class="k-del"></i>Delayed</li><li><i class="k-err"></i>Error</li></ul></div>
+              <div id="steps" class="steps"></div>
+            </div>
+            <div class="panel">
+              <div class="panel-head"><h3>Delay reasons</h3><span class="panel-sub">cases with a recorded reason</span></div>
+              <div id="reasons" class="bars"></div>
+            </div>
+          </div>
+
+          <div class="panel-grid">
+            <div class="panel"><div class="panel-head"><h3>Avg time by office</h3></div><div id="by-office" class="bars"></div></div>
+            <div class="panel"><div class="panel-head"><h3>Avg time by department</h3></div><div id="by-dept" class="bars"></div></div>
+            <div class="panel"><div class="panel-head"><h3>Avg time by HR officer</h3></div><div id="by-officer" class="bars bars-compact"></div></div>
+          </div>
+          <p class="dash-note">Click a step to see only cases where that step was delayed or had an error; click a reason, office, department or officer to filter by it. The dataset is simulated, so differences between offices and officers are small.</p>
+        </div>
+
+        <div class="insights">
+          <article class="insight reveal"><span class="ins-num">75–105</span><p><strong>minutes for most onboardings</strong>, centred around 90. The distribution is right-skewed: a few cases take 150+ minutes, pointing to bottlenecks.</p></article>
+          <article class="insight reveal"><span class="ins-num">2</span><p><strong>steps stand out for delays</strong>: Vetting (26%) and Documents (25%) are delayed far more often than Folder setup (8%).</p></article>
+          <article class="insight reveal"><span class="ins-num">≈0</span><p><strong>correlation between delays in different steps</strong> (all between −0.10 and 0.08), so delays are isolated by task, which makes them good candidates for targeted automation.</p></article>
+        </div>
+
+        <div class="shots two reveal">
+          <figure class="shot"><img src="Distribution%20of%20Processing%20Time.png" alt="Original notebook chart: distribution of processing time" loading="lazy"><figcaption>Original notebook chart: processing time distribution</figcaption></figure>
+          <figure class="shot"><img src="Correlation%20Between%20Delays%20in%20Onboarding%20Steps.png" alt="Original notebook chart: correlation heatmap of delays between onboarding steps" loading="lazy"><figcaption>Original notebook chart: correlation between delayed steps</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOT CAUSES -->
+    <section class="section" id="root-causes" aria-labelledby="rc-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">05 · Root causes</p>
+          <h2 id="rc-title">Fishbone: why onboarding is slow</h2>
+        </div>
+        <div class="fishbone reveal">
+          <div class="fb-col">
+            <div class="fb"><h3>Materials</h3><ul><li>Duplicate documents requested</li><li>Missing or incomplete forms</li><li>High dependency on manual follow-ups</li></ul></div>
+            <div class="fb"><h3>People</h3><ul><li>Lack of standardised training</li><li>Limited tech awareness among HR staff</li><li>Unclear task ownership</li></ul></div>
+          </div>
+          <div class="fb-spine" aria-hidden="true"><span>Slow, error-prone onboarding</span></div>
+          <div class="fb-col">
+            <div class="fb"><h3>Process</h3><ul><li>No central checklist or SOP</li><li>Redundant steps across locations</li><li>Delays waiting on document approvals</li></ul></div>
+            <div class="fb"><h3>Technology</h3><ul><li>No automation tools used initially</li><li>Manual Excel entries with frequent errors</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPROVE -->
+    <section class="section alt" id="improve" aria-labelledby="imp-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">06 · Improve</p>
+          <h2 id="imp-title">From manual to automated</h2>
+          <p>Each onboarding step, and how the redesigned process handles it. Toggle to compare.</p>
+        </div>
+        <div class="flowcmp reveal">
+          <div class="mode-toggle" role="radiogroup" aria-label="Process view">
+            <button type="button" role="radio" aria-checked="true" data-mode="before" class="is-on">Current (manual)</button>
+            <button type="button" role="radio" aria-checked="false" data-mode="after">Future (automated)</button>
+          </div>
+          <ol class="pipe" id="pipe" role="list"></ol>
+          <p class="small" id="pipe-note"></p>
+        </div>
+
+        <div class="section-head reveal" id="targets" style="margin-top:70px">
+          <h3 class="h3-big">Business case targets</h3>
+          <p>From the Define phase. These are goals for the redesigned process, not measured results.</p>
+        </div>
+        <div class="table-wrap reveal" tabindex="0" role="region" aria-label="Targets table">
+          <table class="tgt">
+            <thead><tr><th scope="col">Metric</th><th scope="col">Before</th><th scope="col">Target</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Onboarding time</th><td>90+ min</td><td class="goal">&lt; 45 min</td></tr>
+              <tr><th scope="row">Task automation</th><td>0%</td><td class="goal">≥ 50%</td></tr>
+              <tr><th scope="row">Manual error rate</th><td>~15%</td><td class="goal">&lt; 5%</td></tr>
+              <tr><th scope="row">Dashboards &amp; KPIs</th><td>None</td><td class="goal">Live tracking</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTROL -->
+    <section class="section" id="control" aria-labelledby="ctl-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">07 · Control</p>
+          <h2 id="ctl-title">Keeping the gains</h2>
+        </div>
+        <ol class="control" role="list">
+          <li class="reveal"><span class="freq">Daily</span><h3>Task completion</h3><p>Automated checklist in UiPath with completion logs</p><span class="owner">HR officers</span></li>
+          <li class="reveal"><span class="freq">Weekly</span><h3>Dashboard monitoring</h3><p>Power BI KPIs: average time, delays and errors</p><span class="owner">HR manager</span></li>
+          <li class="reveal"><span class="freq">Biweekly</span><h3>Data validation</h3><p>Spot-check onboarding data entries for accuracy</p><span class="owner">QA specialist</span></li>
+          <li class="reveal"><span class="freq">Monthly</span><h3>Feedback loop</h3><p>HR team feedback on bottlenecks or new errors</p><span class="owner">HR lead</span></li>
+          <li class="reveal"><span class="freq">Quarterly</span><h3>Training &amp; SOP review</h3><p>Update the process guide and checklist from findings</p><span class="owner">L&amp;D coordinator</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="section alt" id="tools" aria-labelledby="tools-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">08 · Tools</p>
+          <h2 id="tools-title">What was used</h2>
+        </div>
+        <ul class="stack reveal" role="list">
+          <li><span class="chip-ico">LSS</span>Lean Six Sigma</li>
+          <li><span class="chip-ico">Py</span>Python · pandas</li>
+          <li><span class="chip-ico">sns</span>Matplotlib · Seaborn</li>
+          <li><span class="chip-ico">Ui</span>UiPath RPA</li>
+          <li><span class="chip-ico">BI</span>Power BI</li>
+          <li><span class="chip-ico">xl</span>Excel</li>
+          <li><span class="chip-ico">PDD</span>Process design doc</li>
+          <li><span class="chip-ico">gh</span>GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT + CTA -->
+    <section class="section cta-section" id="about" aria-labelledby="about-title">
+      <div class="container narrow center reveal">
+        <p class="kicker">Led by</p>
+        <h2 id="about-title">Camila Kavanagh</h2>
+        <p class="about-text">A Business Specialist passionate about process optimisation and ethical automation. With a Lean Six Sigma Black Belt and growing expertise in Python and RPA, I create smarter systems that save time and enhance team performance.</p>
+        <div class="hero-actions center-actions">
+          <a class="btn btn-primary btn-lg" href="https://github.com/blackWcode/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma">
+            <svg width="20" height="20" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            View Project on GitHub
+          </a>
+          <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/camila-d-b907a5105/">LinkedIn</a>
+        </div>
+        <p class="file-links">
+          <a class="text-link" href="https://github.com/blackWcode/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma/raw/main/View%20DMAIC%20Presentation">DMAIC presentation ↓</a>
+          <a class="text-link" href="https://github.com/blackWcode/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma/blob/main/hr_onboarding_analysis.ipynb">Python notebook</a>
+          <a class="text-link" href="https://github.com/blackWcode/Reducing-Employee-Onboarding-Time-with-UiPath-Lean-Six-Sigma/raw/main/realistic_hr_onboarding_data.xlsx">Dataset (.xlsx) ↓</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> <a href="https://github.com/blackWcode">blackWcode</a> · HR Onboarding Process Improvement</p>
+      <p class="small">FuturaCore Ltd. and its data are fictional. Targets are not measured results.</p>
+    </div>
+  </footer>
+
+  <script src="data.js?v=1"></script>
+  <script src="script.js?v=1" defer></script>
+</body>
+</html>
