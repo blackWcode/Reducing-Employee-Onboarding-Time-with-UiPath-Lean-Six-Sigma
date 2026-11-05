@@ -50,7 +50,7 @@ This project simulates a complex HR onboarding process for a growing tech compan
 |----------------------|--------------|--------------|
 | Onboarding Time      | 90+ mins     | < 45 mins    |
 | Task Automation      | 0%           | ≥ 50%        |
-| Manual Error Rate    | ~15%         | < 5%         |
+| Step Delay Rate      | ~15%         | < 5%         |
 | Dashboards & KPIs    | None         | Live tracking |
 
 ---
